@@ -1,0 +1,348 @@
+    * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: snow;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.top_info {
+    background-image: url("/img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+}
+
+.personal_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 20rem;
+    /*20*/
+    padding-right: 5%;
+}
+
+.info-title {
+    font-size: 6rem;
+    color: white;
+}
+
+.text-slider {
+    color: white;
+    font-size: 3rem;
+}
+
+.text-slider-items {
+    display: none;
+}
+
+.social-media {
+    margin-top: 3rem;
+}
+
+.github-logo {
+    width: 6.5rem;
+    padding-right: 2rem;
+    cursor: pointer;
+}
+
+.linkedin-logo {
+    width: 6rem;
+    cursor: pointer;
+}
+
+.github-logo:hover,
+.linkedin-logo:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.next_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.arrow {
+    color: white;
+    font-size: 3rem;
+    animation: breathing 0.9s ease-out infinite normal;
+    cursor: pointer;
+}
+
+.more_info {
+    margin-top: 1rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.download-button,
+.top-button {
+    text-decoration: none;
+}
+
+.option {
+    color: black;
+}
+
+.option:hover {
+    transform: perspective(1px) translateZ(0);
+    transform: scale(1.5);
+    transition-duration: 0.3s;
+}
+
+.download-button {
+    position: fixed;
+    bottom: 3rem;
+    left: 1.7rem;
+    font-size: 2rem;
+}
+
+.top-button {
+    position: fixed;
+    bottom: 13rem;
+    left: 1.5rem;
+    font-size: 3rem;
+}
+
+.projects_info,
+.knowladge,
+.principal_info,
+.view_projects,
+.education_info {
+    margin: 7rem;
+}
+
+.educaction_item {
+    margin-top: 4rem;
+    line-height: 2rem;
+}
+
+.item_project {
+    margin-top: 4rem;
+    line-height: 3rem;
+}
+
+.principal_info {
+    margin-top: 10rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 3rem;
+}
+
+.hobbies,
+.soft_skills {
+    line-height: 5rem;
+    vertical-align: center;
+    margin-top: 5rem;
+}
+
+.fa-ul {
+    font-size: 3rem;
+    margin-left: 2.5rem;
+    padding: 0;
+}
+
+.hobbie_text {
+    font-size: 1.5rem;
+}
+
+.knowladge-info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    line-height: 4rem;
+    flex-wrap: wrap;
+}
+
+.technologies ul li,
+.languages ul li {
+    font-size: 1.5rem;
+}
+
+.soft_skills ul li:last-child {
+    width: 15rem;
+    line-height: 3rem;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+.projects-items {
+    background: white;
+    color: black;
+    margin-bottom: 10rem;
+    width: 21rem;
+    line-height: 3rem;
+    height: 27rem;
+    border: 1px solid green;
+    padding: 2rem
+}
+
+.card_img {
+    width: 21rem;
+}
+
+.project_img {
+    position: relative;
+    width: 21rem;
+    height: auto;
+}
+
+.card_img {
+    height: 15rem;
+}
+
+.project_img:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.project_img img {
+    display: block;
+}
+
+.project_img button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.btn_card_info {
+    border-radius: 28px;
+    background-color: #44c767;
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: none;
+    border: none;
+    width: 7rem;
+    height: 4rem;
+}
+
+.btn_card_info:hover {
+    cursor: pointer;
+}
+
+.card_info {
+    margin-top: 3rem;
+}
+
+.project_img:hover button {
+    opacity: 1;
+}
+
+.darkmode--activated .fa-ul {
+    color: white;
+}
+
+.darkmode--activated .option {
+    color: white;
+}
+
+@media screen and (min-width: 1224px) and (max-width: 1824px) {
+    /* Desktops and laptops ----------- */
+    .personal_info {
+        padding-top: 10rem;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 874px) {
+    .info-title {
+        font-size: 2rem;
+        color: white;
+    }
+    .personal_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20rem;
+        /*20*/
+        padding-right: 5%;
+    }
+    .github-logo {
+        width: 3.5rem;
+        padding-right: 2rem;
+        cursor: pointer;
+    }
+    .linkedin-logo {
+        width: 3rem;
+        cursor: pointer;
+    }
+    .text-slider {
+        color: white;
+        font-size: 1.5rem;
+    }
+    .knowladge-info {
+        justify-content: flex-start;
+    }
+    .languages {
+        margin-top: 4rem;
+    }
+    .container {
+        display: flex;
+        justify-content: flex-start;
+    }
+    @keyframes breathing {
+        0% {
+            -webkit-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+            transform: scale(0.9);
+        }
+        25% {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+        60% {
+            -webkit-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+            transform: scale(0.9);
+        }
+        100% {
+            -webkit-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+            transform: scale(0.9);
+        }
+    }
